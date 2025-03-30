@@ -1,104 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="et">
 <head>
-    <style>
-        .container {
-            width: 500px;
-            margin: 0 auto;
-            font-family: Arial, sans-serif;
-        }
-        .title {
-            text-align: center;
-            font-size: 20px;
-            margin-bottom: 15px;
-        }
-        .flags-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-        .country-label {
-            display: flex;
-            justify-content: space-between;
-            width: 500px;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        .portugal {
-            margin-right: 10px;
-            text-align: center;
-        }
-        .iceland {
-            margin-left: 10px;
-            text-align: center;
-        }
-        .flag {
-            width: 170px;
-            height: 100px;
-            border: 1px solid #ccc;
-        }
-        .stats-table {
-            width: 500px;
-        }
-        .stats-table tr td:first-child {
-            text-align: left;
-            width: 150px;
-        }
-        .stats-table tr td:nth-child(2) {
-            text-align: center;
-            width: 170px;
-        }
-        .stats-table tr td:nth-child(3) {
-            text-align: center;
-            width: 170px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="description" content="Õpime veebitehnoloogiat">
+	<meta name="keywords" content="HTML,CSS,HTML5,CSS3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ülesanne5</title>
 </head>
 <body>
-    <div class="container">
-        <div class="title">Portugal vs Island EURO2016</div>
-        
-        <div class="country-label">
-            <div style="width: 250px; text-align: center;">Portugal</div>
-            <div style="width: 250px; text-align: center;">Island</div>
-        </div>
-        
-        <div class="flags-container">
-            <div class="portugal">
-                <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg" alt="Portugal lipp">
-            </div>
-            <div class="iceland">
-                <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg" alt="Islandi lipp">
-            </div>
-        </div>
-        
-        <table class="stats-table">
-            <tr>
-                <td>Võidud</td>
-                <td>15</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Viigid</td>
-                <td>5</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Kaotused</td>
-                <td>8</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Löödud väravad</td>
-                <td>1.43</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Sisse lastud väravad</td>
-                <td>0.93</td>
-                <td>0</td>
-            </tr>
-        </table>
-    </div>
+    <h1>ÜLESANNE 5</h1>
+    <ul>    
+        <li><i>suvaline tekst</i></li>
+        <li><strong>teine tekst</strong></li>
+        <li><strong><i>kolmas tekst</i></strong></li>
+        <li>suvaline<br>tekst</li>
+        <li>suvaline <s>tekst</s></li>
+        <li>S=&pi;*r<sup>2</sup></li>
+        <li>suvaline<mark>tekst</mark></li>
+        <li><code>&lt;Pealkiri 1&lt;/h1&gt;</code></li>
+    </ul>
+    <h2>Animeeritud gif(pildi link viitab välisallikale)</h2>
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZW5rYjRwbDdmNDVrZTNsMWpkaWRpbnY3anV2aml6eXcyMGdhMmE1cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IB9foBA4PVkKA/giphy.gif" alt="banaan">
+    <h3>Jalgpalli tabel</h3>
+    <table>
+        <caption>Portugal vs Island EURO2016</caption>
+        <thead>
+        <tr>
+            <th>        </th>
+            <th>Portugal<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg" alt="Portugal" width="150" height="100"></th>
+            <th>Island<img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg" alt="Island" width="150" height="100"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Võidud</td>
+            <td>15</td>
+            <td>0</td>
+        </tr> 
+        <tr>
+            <td>Viigid</td>
+            <td>5</td>
+            <td>0</td>
+        </tr> 
+        <tr>
+            <td>Kaotused</td>
+            <td>8</td>
+            <td>0</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td>Löödud väravad</td>
+            <td>1,43</td>
+            <td>0</td>
+        </tr> 
+        <tr>
+            <td>Sisse lastud väravad</td>
+            <td>0,93</td>
+            <td>0</td>
+        </tr> 
+        </tbody>
+    </table>
 </body>
-</html> 
+</html>
