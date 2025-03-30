@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel ja pildid</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabel ja pildid</h1>
+    <h3>Animeeritud gif (pildi link viitab välisallikale)</h3>
+    <a href="https://media.giphy.com/media/l0HlF3zXrYpUWxgE4/giphy.gif" target="_blank">
+        <img src="https://media.giphy.com/media/l0HlF3zXrYpUWxgE4/giphy.gif" alt="Animeeritud GIF">
+    </a>
+    
+    <h3>Loo samasugune kolmeveeruline tabel. Pildi laius 100px</h3>
+    <h4>Portugal vs Iceland EURO2016</h4>
+    <table>
+        <tr>
+            <th></th>
+            <th>Portugal</th>
+            <th>Iceland</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg" alt="Portugal"></td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg" alt="Iceland"></td>
+        </tr>
+        <tr>
+            <td>Võidud</td>
+            <td>15</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Viigid</td>
+            <td>5</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Kaotused</td>
+            <td>8</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Löödud väravad</td>
+            <td>1.43</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Sisse lastud väravad</td>
+            <td>0.93</td>
+            <td>0</td>
+        </tr>
+    </table>
+</body>
+</html>
