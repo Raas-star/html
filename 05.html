@@ -1,62 +1,104 @@
 <!DOCTYPE html>
-<html lang="et">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabel ja pildid</title>
     <style>
-        table {
-            width: 50%;
-            margin: 0;
-            border-collapse: collapse;
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
         }
-        td {
-            padding: 0;
+        .title {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .flags-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .country-label {
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .portugal {
+            margin-right: 10px;
+            text-align: center;
+        }
+        .iceland {
+            margin-left: 10px;
+            text-align: center;
+        }
+        .flag {
+            width: 170px;
+            height: 100px;
+            border: 1px solid #ccc;
+        }
+        .stats-table {
+            width: 500px;
+        }
+        .stats-table tr td:first-child {
             text-align: left;
-            border: none;
+            width: 150px;
         }
-        img {
-            width: 100px;
+        .stats-table tr td:nth-child(2) {
+            text-align: center;
+            width: 170px;
         }
-        .gif {
-            width: 200px;
+        .stats-table tr td:nth-child(3) {
+            text-align: center;
+            width: 170px;
         }
     </style>
 </head>
 <body>
-    <h1>Tabel ja pildid</h1>
-    <h3>Animeeritud gif (pildi link viitab välisallikale)</h3>
-    <img class="gif" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExems0cGhvMTI0eThrbGdlazU0OGw2N3o3aWxqMDBuaHU1azIwMGNxbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZYoFTHxrWNFbW/giphy.gif" alt="Animeeritud GIF">
-    
-    <h3>Loo samasugune kolmeveeruline tabel. Pildi laius 100px</h3>
-    <h4>Portugal vs Island EURO2016</h4>
-    <table>
-        <tr>
-            <td></td>
-            <td>Portugal</td>
-            <td>Island</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg" alt="Portugal"></td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Island.svg" alt="Island"></td>
-        </tr>
-        <tr>
-            <td>Võidud</td><td>15</td><td>0</td>
-        </tr>
-        <tr>
-            <td>Viigid</td><td>5</td><td>0</td>
-        </tr>
-        <tr>
-            <td>Kaotused</td><td>8</td><td>0</td>
-        </tr>
-        <tr>
-            <td>Löödud väravad</td><td>1.43</td><td>0</td>
-        </tr>
-        <tr>
-            <td>Sisse lastud väravad</td><td>0.93</td><td>0</td>
-        </tr>
-    </table>
+    <div class="container">
+        <div class="title">Portugal vs Island EURO2016</div>
+        
+        <div class="country-label">
+            <div style="width: 250px; text-align: center;">Portugal</div>
+            <div style="width: 250px; text-align: center;">Island</div>
+        </div>
+        
+        <div class="flags-container">
+            <div class="portugal">
+                <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg" alt="Portugal lipp">
+            </div>
+            <div class="iceland">
+                <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg" alt="Islandi lipp">
+            </div>
+        </div>
+        
+        <table class="stats-table">
+            <tr>
+                <td>Võidud</td>
+                <td>15</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Viigid</td>
+                <td>5</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Kaotused</td>
+                <td>8</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Löödud väravad</td>
+                <td>1.43</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Sisse lastud väravad</td>
+                <td>0.93</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
 </body>
-</html>
-      
+</html> 
