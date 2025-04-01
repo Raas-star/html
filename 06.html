@@ -1,64 +1,70 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vormide loomine</title>
+    <title>Minu Teine proov</title>
+    <link rel="icon" type="image/png" href="apple-touch-icon.png">
+    <style>.highlight { color: gray; }</style>
 </head>
 <body>
-    <h1>Vormide loomine</h1>
-    <form>
-        <table>
+<h3>Vormide loomine</h3>
+
+<form>
+    <table>
+        <tbody>
             <tr>
-                <td><label for="kasutajanimi">Kasutajanimi: (max pikkus 6)</label></td>
-                <td><input type="text" id="kasutajanimi" name="kasutajanimi" maxlength="6" required></td>
+                <td>Kasutaja nimi:</td>
+                <td><input name="kasutaja" type="text" placeholder="max pikkus 6" maxlength="6"></td>
+            </tr>                
+            <tr>
+                <td>Kursus:</td>
+                <td><input name="kursus" type="text" placeholder="max pikkus 3" maxlength="3"></td>
             </tr>
             <tr>
-                <td><label for="kursus">Kursus: (max pikkus 3)</label></td>
-                <td><input type="text" id="kursus" name="kursus" maxlength="3" required></td>
+                <td>Osakonna number:</td>
+                <td><input type="number" value="1" min="1" max="10" step="1"></td>
             </tr>
             <tr>
-                <td><label for="osakonna-number">Osakonna number:</label></td>
-                <td><input type="number" id="osakonna-number" name="osakonna-number" value="1" required></td>
+                <td>Parool:</td>
+                <td><input name="parool" type="password"></td>
             </tr>
             <tr>
-                <td><label for="parool">Parool:</label></td>
-                <td><input type="password" id="parool" name="parool" required></td>
-            </tr>
-            <tr>
-                <td><label for="vali-teenus">Vali teenus:</label></td>
+                <td>Vali teenus:</td>
                 <td>
-                    <select id="vali-teenus" name="teenus">
-                        <option value="odav">Odav 0,59€</option>
+                    <select name="teenus">
+                        <option value="">-- Vali teenus --</option>
+                        <option value="odav"> Odav 0,59€ </option>
+                        <option value="kesk"> Keskmine 2,59€ </option>
+                        <option value="kall"> Kallis 5,00€ </option>
                     </select>
                 </td>
             </tr>
             <tr>
-                <td><label>Roll:</label></td>
+                <td>Roll:</td> 
                 <td>
-                    <input type="radio" id="admin" name="roll" value="admin" required>
-                    <label for="admin">Admin</label>
-                    <input type="radio" id="moderaator" name="roll" value="moderaator">
-                    <label for="moderaator">Moderaator</label>
-                    <input type="radio" id="user" name="roll" value="user">
-                    <label for="user">User</label>
+                    <input type="radio" name="roll" value="admin"> Admin <br>
+                    <input type="radio" name="roll" value="mode"> Moderaator <br>
+                    <input type="radio" name="roll" value="use"> User <br>   
                 </td>
             </tr>
             <tr>
-                <td><label for="tingimused">Nõustun tingimustega:</label></td>
-                <td><input type="checkbox" id="tingimused" name="tingimused" required></td>
+                <td>Nõustun tingimustega:</td>
+                <td><input type="checkbox" name="noustun"></td>
             </tr>
             <tr>
-                <td><label for="enesetutvustus">Enesetutvustus:</label></td>
-                <td><textarea id="enesetutvustus" name="enesetutvustus" rows="4" cols="50"></textarea></td>
+                <td>Enesetutvustus:</td>
+                <td><textarea name="enesetutvustus" rows="5" cols="30"></textarea></td>    
             </tr>
             <tr>
                 <td colspan="2">
-                    <button type="reset">Tühjenda väljad</button>
-                    <button type="submit">Saada</button>
+                    <input type="reset" value="Tühjenda väljad">
+                    <input type="submit" value="Registreeru">
                 </td>
             </tr>
-        </table>
-    </form>
+        </tbody>
+    </table>
+</form>
+
 </body>
 </html>
